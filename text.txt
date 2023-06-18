@@ -7,3 +7,5 @@ mongodb+srv://nyandoonotex:FLQDQl18S2skFIJC@reactbackendportfolio.tvbi3ro.mongod
 
 //to install all packages
 // npm install dotenv cors express mongodb mongoose nodemon
+
+mongodb+srv://nyandoonotex:FLQDQl18S2skFIJC@reactbackendportfolio.tvbi3ro.mongodb.net/?retryWrites=true&w=majority
