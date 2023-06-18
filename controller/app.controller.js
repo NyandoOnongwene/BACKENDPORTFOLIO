@@ -1,5 +1,5 @@
-const { portfolioModel } = require('../model/portfolio_model');
-const { testimonialModel } = require('../model/testimonial_model');
+const { portfolioModel } = require("../model/portfolio_model");
+const { testimonialModel } = require("../model/testimonial_model");
 
 
 exports.portfolioAppRoute = async (req, res) => {
@@ -9,7 +9,7 @@ exports.portfolioAppRoute = async (req, res) => {
 
 
     return res.status(200).send({
-      message: 'Success',
+      message: "Success",
       data: items
     });
   } catch (error) {
@@ -22,11 +22,11 @@ exports.portfolioAppRoute = async (req, res) => {
 exports.testimonialAppRoute = async (req, res) => {
   try {
 
-    items = await portfolioSchema.find({});
+    items = await testimonialModel.find({});
 
 
     return res.status(200).send({
-      message: 'Success',
+      message: "Success",
       data: items
     });
   } catch (error) {

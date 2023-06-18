@@ -1,8 +1,8 @@
-const express = require('express');
+const express = require("express");
 const app = express();
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 const { MONGO_DB_CONFIG } = require("./config/app.config");
-const cors = require('cors');
+const cors = require("cors");
 
 // Connection to MongoDB
 mongoose.connect(MONGO_DB_CONFIG.DB, {
@@ -13,7 +13,6 @@ mongoose.connect(MONGO_DB_CONFIG.DB, {
     console.log('Connected to MongoDB');
   })
   .catch((error) => {
-    console.log(MONGO_DB_CONFIG.DB);
     console.error('Error connecting to MongoDB:', error);
   });
 
@@ -25,10 +24,7 @@ app.use(cors());
 app.use(express.json());
 
 // Define a route to fetch the data
-app.use('/api', require("./router/app.route"));
-
-
-
+app.use("/api", require("./router/app.route"));
 
 
 // Start the server
