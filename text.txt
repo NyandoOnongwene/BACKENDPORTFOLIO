@@ -1,2 +1,6 @@
 username:  nyandoonotex
 password: FLQDQl18S2skFIJC
+
+
+
+mongodb+srv://nyandoonotex:FLQDQl18S2skFIJC@reactbackendportfolio.tvbi3ro.mongodb.net/
